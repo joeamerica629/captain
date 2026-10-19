@@ -1,565 +1,293 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>MC Captain Seleb | Mombasa's #1 Hype MC &amp; DJ</title>
-<!-- Tailwind CSS -->
-<script src="https://cdn.tailwindcss.com"></script>
-<!-- FontAwesome Icons -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800;900&amp;family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
-<script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        selebCyan: '#00FFCC',
-                        selebTeal: '#00A896',
-                        selebGold: '#E6C280',
-                        selebBronze: '#C59B27',
-                        selebFire: '#FF3800',
-                        selebDark: '#060508',
-                    },
-                    fontFamily: {
-                        cinzel: ['Cinzel', 'serif'],
-                        jakarta: ['Plus Jakarta Sans', 'sans-serif']
-                    },
-                    animation: {
-                        'pulse-glow': 'pulseGlow 2.5s ease-in-out infinite alternate',
-                        'float-slow': 'float 4s ease-in-out infinite',
-                        'spin-slow': 'spin 14s linear infinite'
-                    },
-                    keyframes: {
-                        pulseGlow: {
-                            '0%': { boxShadow: '0 0 15px rgba(0, 255, 204, 0.2), 0 0 30px rgba(255, 56, 0, 0.2)' },
-                            '100%': { boxShadow: '0 0 30px rgba(0, 255, 204, 0.5), 0 0 50px rgba(255, 56, 0, 0.5)' }
-                        },
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0px)' },
-                            '50%': { transform: 'translateY(-6px)' }
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-<style>
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: #060508;
-            color: #FFFFFF;
-            overflow-x: hidden;
-            -webkit-tap-highlight-color: transparent;
-        }
-
-        .bg-flame-overlay {
-            background: 
-                radial-gradient(circle at 50% 10%, rgba(255, 56, 0, 0.2) 0%, transparent 55%),
-                radial-gradient(circle at 10% 80%, rgba(0, 255, 204, 0.15) 0%, transparent 50%),
-                radial-gradient(circle at 90% 85%, rgba(197, 155, 39, 0.15) 0%, transparent 50%),
-                #060508;
-        }
-
-        .gold-metallic-text {
-            background: linear-gradient(135deg, #FFF0CA 0%, #E6C280 40%, #A3791B 80%, #FFF0CA 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-shadow: 0 0 20px rgba(230, 194, 128, 0.3);
-        }
-
-        .seleb-card {
-            background: rgba(15, 14, 23, 0.85);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(0, 255, 204, 0.2);
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.6);
-            transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
-        }
-
-        .seleb-card:hover, .seleb-card:active {
-            transform: translateY(-3px) scale(1.01);
-            border-color: rgba(0, 255, 204, 0.6);
-            box-shadow: 0 10px 35px rgba(0, 255, 204, 0.25), 0 0 20px rgba(255, 56, 0, 0.3);
-        }
-
-        .shine-effect {
-            position: relative;
-            overflow: hidden;
-        }
-        .shine-effect::after {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(60deg, transparent, rgba(255,255,255,0.12), transparent);
-            transform: rotate(30deg);
-            transition: all 0.6s ease;
-        }
-        .shine-effect:hover::after {
-            left: 100%;
-        }
-
-        .modal-active {
-            opacity: 1 !important;
-            pointer-events: auto !important;
-            transform: scale(1) !important;
-        }
-    </style>
-<meta content="MC Captain Seleb — Mombasa MC, DJ and event host. Book coastal club nights, beach parties, weddings and corporate events, and explore the photo gallery." name="description"/><style>
-/* Shared gallery palette and a wider, responsive home layout. */
-html{scroll-behavior:smooth;scroll-padding-top:100px}body{display:block!important;padding-bottom:0!important}.bg-flame-overlay{background:radial-gradient(ellipse at 50% 0,#ff380020,transparent 45%),radial-gradient(ellipse at 0 80%,#00ffcc12,transparent 50%),#060508}.site-header{position:sticky;top:0;z-index:40;width:100%;padding:16px 24px;background:#060508ec;backdrop-filter:blur(16px);border-bottom:1px solid #ffffff18}.header-inner{max-width:1012px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font-family:Cinzel,serif;font-weight:800;color:#e6c280;font-size:15px}.header-links{display:flex;align-items:center;gap:20px;font-size:12px}.header-links a:hover{color:#00ffcc}.header-tools{display:flex;gap:8px}.header-tools button{width:36px;height:36px;border-radius:10px;border:1px solid #ffffff20;background:#ffffff08;color:#ccc}.home-layout{width:100%;max-width:1060px;margin:0 auto!important;padding:56px 24px 32px;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}.home-layout>*{margin:0!important;min-width:0}.site-hero{grid-column:1/-1;display:grid;grid-template-columns:1.12fr .88fr;align-items:center;gap:56px;padding:8px 0 34px}.hero-copy{display:flex;flex-direction:column;align-items:flex-start;gap:20px}.hero-emblem{width:84px;height:84px}.hero-emblem>div:first-child{opacity:.35}.hero-emblem>div:nth-child(2){width:84px;height:84px}.hero-copy h1{font-size:clamp(38px,4.3vw,58px);line-height:1.12;letter-spacing:-.025em;margin:0 0 16px}.hero-copy .hero-title>p:first-of-type{font-size:12px;line-height:1.8;letter-spacing:.1em}.hero-copy .hero-title>p:last-of-type{margin-top:10px;font-size:12px;color:#b7b3c1}.hero-tags{justify-content:flex-start!important;gap:8px!important}.hero-tags span{padding:6px 10px;font-size:10px}.eyebrow{color:#00ffcc;font-size:10px;font-weight:800;letter-spacing:.2em;text-transform:uppercase}.availability{display:flex;align-items:center;gap:9px;color:#00ffcc;font-weight:700;font-size:11px}.availability:before{content:'';width:7px;height:7px;background:#00ffcc;border-radius:50%;box-shadow:0 0 12px #00ffcc70}.hero-description{font-size:14px;line-height:1.8;color:#b7b3c1;max-width:430px}.hero-ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:4px}.hero-ctas a{padding:13px 20px;border-radius:12px;font-size:12px;font-weight:800}.primary-cta{background:#e6c280;color:#060508}.secondary-cta{border:1px solid #00ffcc40;color:#00ffcc;background:#00ffcc08}.hero-portrait{position:relative;overflow:hidden;border-radius:20px;border:1px solid #00ffcc35;aspect-ratio:4/4.5;background:#0f0e17}.hero-portrait picture{display:block;height:100%}.hero-portrait img{width:100%;height:100%;object-fit:cover;object-position:50% 28%}.portrait-caption{position:absolute;bottom:0;left:0;right:0;padding:65px 22px 20px;background:linear-gradient(transparent,#000d);display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:11px;color:#fff}.links-heading{grid-column:1/-1;padding:0 0 2px}.links-heading h2{font-family:Cinzel,serif;font-size:28px;margin-top:6px}.links-grid{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:26px!important}.links-grid>*{margin:0!important;min-width:0}.links-grid>.grid{grid-column:1/-1}.links-grid>a,.links-grid>button{min-height:98px;padding:20px;gap:12px;border-radius:18px}.links-grid h4{font-size:14px}.links-grid p{font-size:11px;line-height:1.7;margin-top:3px}.links-grid>*>div{min-width:0}.links-grid>*>div>div:first-child{flex-shrink:0}.seleb-card{box-shadow:none;background:rgba(15,14,23,.88)}.seleb-card:hover,.seleb-card:active{transform:translateY(-2px);box-shadow:0 8px 24px #00ffcc0d}.shine-effect:after{pointer-events:none;opacity:.25}.residency,.gallery-feature{padding:28px;border-radius:20px}.residency{display:flex;flex-direction:column;justify-content:center;gap:16px}.residency>*{margin:0!important}.residency h2,.gallery-feature h2{font-size:25px;line-height:1.3}.residency>a{align-self:flex-start;margin-top:8px!important}.gallery-feature{display:flex;flex-direction:column;gap:16px}.gallery-feature>*{margin:0!important}.gallery-cover{display:block;overflow:hidden;border-radius:12px;border:1px solid #ffffff15}.gallery-cover img{display:block;width:100%;aspect-ratio:1.85;object-fit:cover}.gallery-feature>a:last-child{padding:15px}.services{grid-column:1/-1;padding:26px;border-radius:20px}.services>.grid{grid-template-columns:repeat(4,1fr);gap:12px}.services>.grid>div{padding:16px}.home-footer{max-width:1060px;margin:0 auto!important;padding:26px 24px 40px;border-top:1px solid #ffffff15;text-align:center;position:relative;z-index:10}.home-footer p{color:#918b9e;font-size:11px}a:focus-visible,button:focus-visible{outline:3px solid #00ffcc;outline-offset:4px}.skip-link{position:fixed;top:-100px;left:16px;z-index:100;background:#060508;color:#00ffcc;padding:10px}.skip-link:focus{top:10px}#fire-canvas{opacity:.18!important}#booking-modal,#qr-modal{visibility:hidden}#booking-modal.modal-active,#qr-modal.modal-active{visibility:visible}
-@media(min-width:601px) and (max-width:900px){.site-hero{gap:28px}.hero-copy h1{font-size:40px}.links-grid>a,.links-grid>button{padding:16px}.links-grid .w-12{width:38px;height:38px}.links-grid .space-x-3\.5>:not([hidden])~:not([hidden]){margin-left:10px}.services>.grid{grid-template-columns:1fr 1fr}}
-@media(max-width:600px){.site-header{padding:14px 18px}.brand{font-size:12px}.header-links{gap:14px}.header-tools{display:flex;gap:6px}.header-tools button{width:30px;height:30px}.header-links>a[href="#connect"]{display:none}.home-layout{grid-template-columns:1fr;padding:32px 18px 24px;gap:22px}.site-hero{grid-template-columns:1fr;gap:26px;padding-bottom:10px}.hero-copy{gap:18px}.hero-copy h1{font-size:40px}.hero-portrait{aspect-ratio:1.4}.hero-portrait img{object-position:50% 23%}.hero-emblem,.hero-emblem>div:nth-child(2){width:70px;height:70px}.links-grid{grid-template-columns:1fr;gap:12px;margin-bottom:10px!important}.links-grid>a,.links-grid>button{padding:16px;min-height:90px}.residency,.gallery-feature,.services{padding:22px}.services>.grid{grid-template-columns:1fr 1fr;gap:8px}.services>.grid>div{padding:12px}.links-heading h2{font-size:26px}.hero-description{font-size:13px}.residency h2,.gallery-feature h2{font-size:22px}}
-@media(max-width:359px){.header-links{gap:10px;font-size:11px}.brand{font-size:11px}.hero-copy h1{font-size:34px}.links-grid>a,.links-grid>button{padding:12px}.links-grid .w-12{width:36px;height:36px}.links-grid .space-x-3\.5>:not([hidden])~:not([hidden]){margin-left:8px}.links-grid p{font-size:10px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}#fire-canvas{display:none}}
-</style></head>
-<body class="bg-flame-overlay min-h-screen flex flex-col items-center justify-between pb-10 relative"><a class="skip-link" href="#main">Skip to content</a>
-<canvas class="fixed top-0 left-0 w-full h-full pointer-events-none z-0 opacity-70" id="fire-canvas"></canvas>
-<header class="site-header"><div class="header-inner"><a class="brand" href="index.html">MC CAPTAIN SELEB</a><nav aria-label="Main navigation" class="header-links"><a href="gallery.html">Gallery</a><a href="#connect">Connect</a><div class="header-tools"><button aria-label="Show page QR code" onclick="toggleQRModal()" title="QR Code"><i aria-hidden="true" class="fa-solid fa-qrcode"></i></button><button aria-label="Share page" onclick="shareProfile()" title="Share Page"><i aria-hidden="true" class="fa-solid fa-share-nodes"></i></button></div></nav></div></header>
-<main class="home-layout" id="main">
-<section class="site-hero"><div class="hero-copy"><div class="relative group hero-emblem">
-<div class="absolute -inset-1.5 rounded-full bg-gradient-to-r from-selebFire via-selebCyan to-selebGold blur-md opacity-85 group-hover:opacity-100 transition duration-500 animate-pulse"></div>
-<div class="relative w-36 h-36 rounded-full p-1 bg-black border-2 border-selebCyan shadow-2xl flex items-center justify-center overflow-hidden">
-<svg class="w-full h-full object-contain p-1" viewbox="0 0 200 200">
-<defs>
-<lineargradient id="cyanGrad" x1="0%" x2="100%" y1="0%" y2="100%">
-<stop offset="0%" stop-color="#00FFCC"></stop>
-<stop offset="100%" stop-color="#008080"></stop>
-</lineargradient>
-<lineargradient id="bronzeGrad" x1="0%" x2="100%" y1="0%" y2="100%">
-<stop offset="0%" stop-color="#FFF0CA"></stop>
-<stop offset="50%" stop-color="#E6C280"></stop>
-<stop offset="100%" stop-color="#8A6110"></stop>
-</lineargradient>
-<filter id="glow">
-<fegaussianblur result="coloredBlur" stddeviation="3"></fegaussianblur>
-<femerge>
-<femergenode in="coloredBlur"></femergenode>
-<femergenode in="SourceGraphic"></femergenode>
-</femerge>
-</filter>
-</defs>
-<circle cx="100" cy="100" fill="none" opacity="0.35" r="90" stroke="url(#cyanGrad)" stroke-width="1.5"></circle>
-<text fill="url(#cyanGrad)" filter="url(#glow)" font-family="'Cinzel', serif" font-size="78" font-weight="900" text-anchor="middle" x="100" y="115">MC</text>
-<path d="M 75 48 L 85 58 L 100 40 L 115 58 L 125 48 L 120 68 L 80 68 Z" fill="url(#bronzeGrad)"></path>
-<circle cx="75" cy="45" fill="#00FFCC" r="3.5"></circle>
-<circle cx="100" cy="36" fill="#00FFCC" r="4.5"></circle>
-<circle cx="125" cy="45" fill="#00FFCC" r="3.5"></circle>
-<circle cx="100" cy="100" fill="none" r="30" stroke="url(#bronzeGrad)" stroke-width="5"></circle>
-<circle cx="100" cy="100" fill="url(#bronzeGrad)" r="8"></circle>
-<line stroke="url(#bronzeGrad)" stroke-width="4" x1="100" x2="100" y1="62" y2="138"></line>
-<line stroke="url(#bronzeGrad)" stroke-width="4" x1="62" x2="138" y1="100" y2="100"></line>
-<line stroke="url(#bronzeGrad)" stroke-width="3" x1="73" x2="127" y1="73" y2="127"></line>
-<line stroke="url(#bronzeGrad)" stroke-width="3" x1="127" x2="73" y1="73" y2="127"></line>
-<path d="M 30 152 Q 100 172 170 152 Q 100 180 30 152 Z" fill="#0B090A" stroke="url(#bronzeGrad)" stroke-width="2"></path>
-<text fill="url(#bronzeGrad)" font-family="'Cinzel', serif" font-size="13" font-weight="800" letter-spacing="2" text-anchor="middle" x="100" y="164">CAPTAIN SELEB</text>
-</svg>
-</div>
-<div class="absolute bottom-1 right-1 bg-black rounded-full p-1 border border-selebCyan shadow-lg" title="Mombasa, Kenya">
-<span class="text-xs">🇰🇪</span>
-</div>
-</div><p class="availability">Available for Coast &amp; EA gigs</p><div class="hero-title">
-<h1 class="text-3xl sm:text-4xl font-extrabold font-cinzel tracking-wider gold-metallic-text">
-                    MC CAPTAIN SELEB
-                </h1>
-<p class="text-xs sm:text-sm text-selebCyan font-bold tracking-widest uppercase">
-                    Mombasa's #1 Hype MC <span class="text-selebFire">•</span> DJ <span class="text-selebFire">•</span> Event Host
-                </p>
-<p class="text-xs text-gray-300 font-medium">
-<i class="fa-solid fa-location-dot text-selebFire mr-1"></i> Mombasa, Coastal Region &amp; East Africa
-                </p>
-</div><p class="hero-description">From the first beat to the last encore. Bringing the energy to club nights, beach parties and unforgettable celebrations across the Coast.</p><div class="flex flex-wrap justify-center gap-1.5 pt-1 hero-tags">
-<span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold tracking-wider uppercase bg-cyan-500/10 text-cyan-300 border border-cyan-500/30">Coastal Vibez</span>
-<span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold tracking-wider uppercase bg-amber-500/10 text-amber-300 border border-amber-500/30">Bongo &amp; Afrobeats</span>
-<span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold tracking-wider uppercase bg-red-500/10 text-red-400 border border-red-500/30">Beach Parties</span>
-<span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold tracking-wider uppercase bg-purple-500/10 text-purple-300 border border-purple-500/30">Weddings &amp; Galas</span>
-</div><div class="hero-ctas"><a class="primary-cta" href="https://wa.me/254707089335?text=Hello%20MC%20Captain%20Seleb!%20I%20want%20to%20inquire%20about%20booking%20you%20for%20an%20event." rel="noopener" target="_blank">Book the Captain ↗</a><a class="secondary-cta" href="gallery.html">Explore the gallery ↗</a></div></div><a aria-label="Explore Captain Seleb's photo gallery" class="hero-portrait" href="gallery.html"><picture><source srcset="assets/1000049718.webp" type="image/webp"/><img alt="MC Captain Seleb wearing his signature crown" decoding="async" fetchpriority="high" height="996" src="assets/1000049718.jpg" width="1536"/></picture><span class="portrait-caption"><span>MOMBASA · KENYA</span><span>View gallery ↗</span></span></a></section>
-<div class="links-heading"><p class="eyebrow">Stay in the loop</p><h2 id="connect-title">Connect with the Captain</h2></div><section aria-labelledby="connect-title" class="links-grid" id="connect">
-<!-- Primary Direct WhatsApp Chat -->
-<a class="seleb-card shine-effect w-full p-4 rounded-2xl flex items-center justify-between group border-l-4 border-l-emerald-400" href="https://wa.me/254707089335?text=Hello%20MC%20Captain%20Seleb!%20I%20want%20to%20inquire%20about%20booking%20you%20for%20an%20event." rel="noopener" target="_blank">
-<div class="flex items-center space-x-3.5">
-<div class="w-12 h-12 rounded-xl bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
-<i class="fa-brands fa-whatsapp"></i>
-</div>
-<div>
-<h4 class="text-sm font-bold text-white group-hover:text-emerald-300 transition-colors">Chat on WhatsApp</h4>
-<p class="text-xs text-gray-400">+254 707 089335 • Direct Instant Message</p>
-</div>
-</div>
-<span class="px-3 py-1.5 rounded-lg bg-emerald-500/20 text-emerald-300 text-xs font-bold border border-emerald-500/30 flex items-center gap-1.5 shrink-0">
-                    Chat <i class="fa-solid fa-paper-plane text-[10px]"></i>
-</span>
-</a>
-<!-- Dedicated Rate Card & Booking Modal (Spaced out nicely) -->
-<button class="seleb-card shine-effect w-full p-4 rounded-2xl flex items-center justify-between group border-l-4 border-l-selebGold text-left" onclick="openBookingOptions()">
-<div class="flex items-center space-x-3.5">
-<div class="w-12 h-12 rounded-xl bg-amber-500/20 border border-amber-500/30 text-selebGold flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
-<i class="fa-solid fa-file-invoice-dollar"></i>
-</div>
-<div>
-<h4 class="text-sm font-bold text-white group-hover:text-amber-300 transition-colors">Request Rate Card &amp; Booking</h4>
-<p class="text-xs text-gray-400">Club Gigs, Beach Parties, Weddings &amp; Corporate</p>
-</div>
-</div>
-<span class="px-3 py-1.5 rounded-lg bg-amber-500/20 text-amber-300 text-xs font-bold border border-amber-500/30 flex items-center gap-1 shrink-0">
-                    Rates <i class="fa-solid fa-chevron-right text-[10px]"></i>
-</span>
-</button>
-<!-- Instagram Link -->
-<a class="seleb-card shine-effect w-full p-4 rounded-2xl flex items-center justify-between group border-l-4 border-l-pink-500" href="https://instagram.com/captain_seleb" rel="noopener" target="_blank">
-<div class="flex items-center space-x-3.5">
-<div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-amber-500/20 via-pink-500/20 to-purple-500/20 border border-pink-500/30 text-pink-400 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
-<i class="fa-brands fa-instagram"></i>
-</div>
-<div>
-<h4 class="text-sm font-bold text-white group-hover:text-pink-300 transition-colors">Instagram Profile</h4>
-<p class="text-xs text-gray-400">@captain_seleb • Recaps, Photos &amp; Stories</p>
-</div>
-</div>
-<i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-pink-300 transition-all text-xs"></i>
-</a>
-<!-- TikTok Profile -->
-<a class="seleb-card shine-effect w-full p-4 rounded-2xl flex items-center justify-between group border-l-4 border-l-white" href="https://www.tiktok.com/@selebjeff" rel="noopener" target="_blank">
-<div class="flex items-center space-x-3.5">
-<div class="w-12 h-12 rounded-xl bg-white/10 border border-white/20 text-white flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
-<i class="fa-brands fa-tiktok"></i>
-</div>
-<div>
-<h4 class="text-sm font-bold text-white group-hover:text-selebCyan transition-colors">TikTok Profile</h4>
-<p class="text-xs text-gray-400">@selebjeff • Short clips &amp; performance moments</p>
-</div>
-</div>
-<i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-white transition-all text-xs"></i>
-</a>
-<!-- Audiomack Profile -->
-<a class="seleb-card shine-effect w-full p-4 rounded-2xl flex items-center justify-between group border-l-4 border-l-amber-400" href="https://audiomack.com/captainseleb" rel="noopener" target="_blank">
-<div class="flex items-center space-x-3.5">
-<div class="w-12 h-12 rounded-xl bg-amber-500/15 border border-amber-400/30 text-amber-300 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
-<i class="fa-solid fa-wave-square"></i>
-</div>
-<div>
-<h4 class="text-sm font-bold text-white group-hover:text-amber-300 transition-colors">Listen on Audiomack</h4>
-<p class="text-xs text-gray-400">@captainseleb • Music &amp; audio releases</p>
-</div>
-</div>
-<i class="fa-solid fa-headphones text-gray-400 group-hover:text-amber-300 transition-all text-xs"></i>
-</a>
-<!-- Facebook Page -->
-<a class="seleb-card shine-effect w-full p-4 rounded-2xl flex items-center justify-between group border-l-4 border-l-blue-500" href="https://www.facebook.com/search/top?q=Seleb%20Captain%20Geoffrey" rel="noopener" target="_blank">
-<div class="flex items-center space-x-3.5">
-<div class="w-12 h-12 rounded-xl bg-blue-500/20 border border-blue-500/30 text-blue-300 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
-<i class="fa-brands fa-facebook"></i>
-</div>
-<div>
-<h4 class="text-sm font-bold text-white group-hover:text-blue-300 transition-colors">Facebook Page</h4>
-<p class="text-xs text-gray-400">Seleb Captain Geoffrey (King Captain Seleb) • 4.7K followers</p>
-</div>
-</div>
-<i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-blue-300 transition-all text-xs"></i>
-</a>
-<!-- YouTube Channel Link -->
-<a class="seleb-card shine-effect w-full p-4 rounded-2xl flex items-center justify-between group border-l-4 border-l-red-500" href="https://youtube.com/@captainseleb" rel="noopener" target="_blank">
-<div class="flex items-center space-x-3.5">
-<div class="w-12 h-12 rounded-xl bg-red-500/20 border border-red-500/30 text-red-500 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
-<i class="fa-brands fa-youtube"></i>
-</div>
-<div>
-<h4 class="text-sm font-bold text-white group-hover:text-red-400 transition-colors">YouTube Channel</h4>
-<p class="text-xs text-gray-400">@captainseleb • Live Shows &amp; Performance Videos</p>
-</div>
-</div>
-<i class="fa-solid fa-arrow-up-right-from-square text-gray-400 group-hover:text-red-400 transition-all text-xs"></i>
-</a>
-<!-- DJ Mixes & Audio Sets Link -->
-<a class="seleb-card shine-effect w-full p-4 rounded-2xl flex items-center justify-between group border-l-4 border-l-cyan-400" href="https://audiomack.com/captainseleb" rel="noopener" target="_blank">
-<div class="flex items-center space-x-3.5">
-<div class="w-12 h-12 rounded-xl bg-cyan-500/20 border border-cyan-500/30 text-cyan-300 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
-<i class="fa-solid fa-compact-disc"></i>
-</div>
-<div>
-<h4 class="text-sm font-bold text-white group-hover:text-cyan-300 transition-colors">Mixtapes &amp; Live Sets</h4>
-<p class="text-xs text-gray-400">Listen to Afrobeats, Bongo, Amapiano &amp; Gengetone</p>
-</div>
-</div>
-<i class="fa-solid fa-headphones text-gray-400 group-hover:text-cyan-300 transition-all text-xs"></i>
-</a>
-<!-- Quick Action Phone Call and Save VCard -->
-<div class="grid grid-cols-2 gap-3 pt-1">
-<a class="seleb-card p-3.5 rounded-2xl flex items-center justify-center space-x-2 text-xs font-bold text-gray-200 hover:text-selebGold border border-white/10" href="tel:+254707089335">
-<i class="fa-solid fa-phone text-selebGold"></i>
-<span>Call Hotline</span>
-</a>
-<button class="seleb-card p-3.5 rounded-2xl flex items-center justify-center space-x-2 text-xs font-bold text-gray-200 hover:text-selebCyan border border-white/10" onclick="downloadVCard()">
-<i class="fa-solid fa-address-book text-selebCyan"></i>
-<span>Save Contact</span>
-</button>
-</div>
-</section>
-<!-- Friday Karaoke Residency -->
-<section class="w-full seleb-card rounded-2xl p-5 border border-amber-400/30 space-y-3 relative overflow-hidden residency">
-<div class="absolute -right-8 -top-8 w-28 h-28 rounded-full bg-amber-400/10 blur-2xl pointer-events-none"></div>
-<div class="flex items-center gap-2 text-amber-300">
-<i class="fa-solid fa-microphone-lines text-xl"></i>
-<p class="text-[10px] font-extrabold uppercase tracking-[.2em]">Every Friday Night</p>
-</div>
-<h2 class="font-cinzel text-xl font-extrabold gold-metallic-text">Karaoke Night at Fisherman's Creek</h2>
-<p class="text-sm text-gray-300">Join MC Captain Seleb for Karaoke Night at <strong class="text-white">Fisherman's Creek, Serena Side</strong>.</p>
-<div class="flex flex-wrap gap-2 text-xs">
-<span class="rounded-full bg-amber-400/10 border border-amber-400/25 px-3 py-1.5 text-amber-200"><i class="fa-regular fa-clock mr-1.5"></i>7:00 PM – Midnight</span>
-<span class="rounded-full bg-cyan-400/10 border border-cyan-400/25 px-3 py-1.5 text-cyan-200"><i class="fa-solid fa-location-dot mr-1.5"></i>Serena Side, Mombasa</span>
-</div>
-<a class="inline-flex items-center gap-2 rounded-xl bg-amber-400 text-black font-extrabold text-xs px-4 py-3 hover:bg-amber-300 transition-colors" href="https://wa.me/254707089335?text=Hello%20MC%20Captain%20Seleb!%20Please%20send%20me%20details%20about%20Friday%20Karaoke%20Night%20at%20Fisherman%27s%20Creek." rel="noopener" target="_blank"><i class="fa-brands fa-whatsapp text-base"></i> Ask about Karaoke Night</a>
-</section>
-<!-- Gallery link and first music-video feature -->
-<section class="w-full seleb-card rounded-2xl p-5 border border-selebCyan/25 space-y-3 gallery-feature" id="gallery">
-<div class="flex items-center justify-between gap-3">
-<div>
-<p class="text-[10px] font-extrabold uppercase tracking-[.2em] text-selebCyan">The visual collection</p>
-<h2 class="font-cinzel text-xl font-extrabold text-white">Captain Seleb Gallery</h2>
-</div>
-<i class="fa-regular fa-images text-3xl text-selebGold"></i>
-</div>
-<p class="text-sm text-gray-300">Live performances, signature style and coastal moments.</p>
-<a aria-label="View live performance photos" class="gallery-cover" href="gallery.html"><picture><source srcset="assets/1000049714.webp" type="image/webp"/><img alt="Captain Seleb performing live under colourful lights" decoding="async" height="1002" loading="lazy" src="assets/1000049714.jpg" width="1536"/></picture></a><a class="seleb-card shine-effect rounded-xl p-4 flex items-center justify-between gap-3 border border-selebCyan/30" href="gallery.html">
-<span class="flex items-center gap-3"><span class="w-10 h-10 rounded-xl bg-cyan-400/10 text-selebCyan flex items-center justify-center"><i class="fa-solid fa-photo-film text-lg"></i></span><span><strong class="block text-sm text-white">Open full gallery</strong><span class="text-xs text-gray-400">Five moments. One Captain.</span></span></span>
-<i class="fa-solid fa-arrow-right text-selebCyan"></i>
-</a>
-</section>
-<section class="w-full seleb-card rounded-2xl p-5 border border-white/10 space-y-3 services">
-<div class="flex items-center space-x-2 border-b border-white/10 pb-2">
-<i class="fa-solid fa-crown text-selebGold text-base"></i>
-<h3 class="text-xs font-extrabold text-white uppercase tracking-wider font-cinzel">Mombasa &amp; Coast Event Hosting</h3>
-</div>
-<div class="grid grid-cols-2 gap-2.5 text-xs">
-<div class="bg-black/40 p-2.5 rounded-xl border border-white/5 flex items-center space-x-2">
-<i class="fa-solid fa-martini-glass-citrus text-pink-400"></i>
-<span class="text-gray-300 font-medium">Clubs &amp; Lounges</span>
-</div>
-<div class="bg-black/40 p-2.5 rounded-xl border border-white/5 flex items-center space-x-2">
-<i class="fa-solid fa-umbrella-beach text-cyan-400"></i>
-<span class="text-gray-300 font-medium">Beach Parties</span>
-</div>
-<div class="bg-black/40 p-2.5 rounded-xl border border-white/5 flex items-center space-x-2">
-<i class="fa-solid fa-ring text-amber-300"></i>
-<span class="text-gray-300 font-medium">Weddings &amp; Galas</span>
-</div>
-<div class="bg-black/40 p-2.5 rounded-xl border border-white/5 flex items-center space-x-2">
-<i class="fa-solid fa-icons text-red-400"></i>
-<span class="text-gray-300 font-medium">Concerts &amp; Shows</span>
-</div>
-</div>
-</section>
-</main>
-<footer class="home-footer">
-<p class="text-[11px] text-gray-500 font-medium">
-<a class="text-selebCyan hover:text-white" href="gallery.html">View Gallery</a> <span class="mx-1">•</span> © <span id="year">2026</span> MC Captain Seleb • Mombasa, Kenya. All Rights Reserved.
-        </p>
-</footer>
-<div aria-hidden="true" aria-label="Rate inquiry and booking" aria-modal="true" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md opacity-0 pointer-events-none transition-all duration-300 scale-95" id="booking-modal" role="dialog">
-<div class="seleb-card w-full max-w-md rounded-3xl p-6 border border-selebCyan/40 relative shadow-2xl space-y-4">
-<button aria-label="Close rate inquiry and booking" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-gray-300 hover:text-white transition-all" onclick="closeBookingOptions()">
-<i class="fa-solid fa-xmark"></i>
-</button>
-<div class="text-center space-y-1">
-<i class="fa-brands fa-whatsapp text-emerald-400 text-3xl"></i>
-<h3 class="text-lg font-bold text-white font-cinzel">Rate Inquiry &amp; Booking</h3>
-<p class="text-xs text-gray-400">Select event type to receive custom rate card via WhatsApp:</p>
-</div>
-<div class="space-y-2">
-<button class="w-full p-3 rounded-xl bg-black/50 hover:bg-emerald-500/20 border border-white/10 hover:border-emerald-500/50 text-left text-xs font-semibold text-white flex justify-between items-center transition-all" onclick="sendWhatsAppTemplate('Mombasa Nightclub / Lounge Gig')">
-<span>🔥 Nightclub / Lounge Hype Host</span>
-<i class="fa-solid fa-chevron-right text-emerald-400"></i>
-</button>
-<button class="w-full p-3 rounded-xl bg-black/50 hover:bg-emerald-500/20 border border-white/10 hover:border-emerald-500/50 text-left text-xs font-semibold text-white flex justify-between items-center transition-all" onclick="sendWhatsAppTemplate('Mombasa Beach Party / Resort Event')">
-<span>🏖️ Beach Party / Resort Event</span>
-<i class="fa-solid fa-chevron-right text-emerald-400"></i>
-</button>
-<button class="w-full p-3 rounded-xl bg-black/50 hover:bg-emerald-500/20 border border-white/10 hover:border-emerald-500/50 text-left text-xs font-semibold text-white flex justify-between items-center transition-all" onclick="sendWhatsAppTemplate('Coastal Wedding Reception')">
-<span>💍 Wedding Reception / Private Gala</span>
-<i class="fa-solid fa-chevron-right text-emerald-400"></i>
-</button>
-<button class="w-full p-3 rounded-xl bg-black/50 hover:bg-emerald-500/20 border border-white/10 hover:border-emerald-500/50 text-left text-xs font-semibold text-white flex justify-between items-center transition-all" onclick="sendWhatsAppTemplate('Corporate Function in Coast Region')">
-<span>👔 Corporate Event / Brand Launch</span>
-<i class="fa-solid fa-chevron-right text-emerald-400"></i>
-</button>
-</div>
-</div>
-</div>
-<div aria-hidden="true" aria-label="Page QR code" aria-modal="true" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md opacity-0 pointer-events-none transition-all duration-300 scale-95" id="qr-modal" role="dialog">
-<div class="seleb-card w-full max-w-xs rounded-3xl p-6 border border-selebGold/40 relative text-center space-y-4">
-<button aria-label="Close page qr code" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-gray-300 hover:text-white" onclick="toggleQRModal()">
-<i class="fa-solid fa-xmark"></i>
-</button>
-<h3 class="text-base font-bold text-white font-cinzel">Scan Page QR Code</h3>
-<div class="bg-white p-3 rounded-2xl inline-block shadow-inner">
-<img alt="QR Code" class="w-40 h-40" id="qr-img" src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&amp;data=https://instagram.com/captain_seleb&amp;color=000000"/>
-</div>
-<p class="text-[11px] text-gray-400">Scan to share MC Captain Seleb's booking page instantly</p>
-</div>
-</div>
-<div class="fixed bottom-5 left-1/2 -translate-x-1/2 z-50 seleb-card px-4 py-2.5 rounded-full border border-selebCyan/40 flex items-center space-x-2 text-xs text-white shadow-xl opacity-0 pointer-events-none transition-all duration-300 transform translate-y-4" id="toast">
-<i class="fa-solid fa-circle-check text-selebCyan"></i>
-<span id="toast-msg">Action successful</span>
-</div>
-<script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-
-        // Update QR code dynamically
-        if (window.location.href) {
-            document.getElementById('qr-img').src = `https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${encodeURIComponent(window.location.href)}&color=000000`;
-        }
-
-        // Particle Canvas Background Animation
-        const canvas = document.getElementById('fire-canvas');
-        const ctx = canvas.getContext('2d');
-        let particles = [];
-
-        function resizeCanvas() {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-        }
-        window.addEventListener('resize', resizeCanvas);
-        resizeCanvas();
-
-        class Particle {
-            constructor() {
-                this.reset();
-            }
-            reset() {
-                this.x = Math.random() * canvas.width;
-                this.y = canvas.height + Math.random() * 50;
-                this.size = Math.random() * 2.5 + 1;
-                this.speedY = Math.random() * 1.5 + 0.5;
-                this.speedX = (Math.random() - 0.5) * 0.5;
-                this.colors = ['#00FFCC', '#FF3800', '#E6C280', '#00A896'];
-                this.color = this.colors[Math.floor(Math.random() * this.colors.length)];
-                this.alpha = Math.random() * 0.6 + 0.2;
-            }
-            update() {
-                this.y -= this.speedY;
-                this.x += this.speedX;
-                this.alpha -= 0.003;
-                if (this.y < 0 || this.alpha <= 0) {
-                    this.reset();
-                }
-            }
-            draw() {
-                ctx.beginPath();
-                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-                ctx.fillStyle = this.color;
-                ctx.globalAlpha = this.alpha;
-                ctx.shadowBlur = 8;
-                ctx.shadowColor = this.color;
-                ctx.fill();
-                ctx.globalAlpha = 1;
-            }
-        }
-
-        for (let i = 0; i < 35; i++) {
-            particles.push(new Particle());
-        }
-
-        function animate() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            particles.forEach(p => {
-                p.update();
-                p.draw();
-            });
-            requestAnimationFrame(animate);
-        }
-        animate();
-
-        document.addEventListener('keydown', e => { if(e.key === 'Escape'){closeBookingOptions();const qr=document.getElementById('qr-modal');qr.classList.remove('modal-active');qr.setAttribute('aria-hidden','true');} });
-
-        // Modal Handlers
-        function openBookingOptions() {
-            document.getElementById('booking-modal').classList.add('modal-active');
-            document.getElementById('booking-modal').setAttribute('aria-hidden','false');
-        }
-
-        function closeBookingOptions() {
-            document.getElementById('booking-modal').classList.remove('modal-active');
-            document.getElementById('booking-modal').setAttribute('aria-hidden','true');
-        }
-
-        function toggleQRModal() {
-            const modal = document.getElementById('qr-modal');
-            if (modal.classList.contains('modal-active')) {
-                modal.classList.remove('modal-active');
-                modal.setAttribute('aria-hidden','true');
-            } else {
-                modal.classList.add('modal-active');
-                modal.setAttribute('aria-hidden','false');
-            }
-        }
-
-        function sendWhatsAppTemplate(eventType) {
-            closeBookingOptions();
-            const phone = "254707089335";
-            const message = encodeURIComponent(`Hello MC Captain Seleb! I am reaching out to request your Rate Card for a ${eventType}. Please share availability and rates.`);
-            window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
-        }
-
-        function shareProfile() {
-            if (navigator.share) {
-                navigator.share({
-                    title: 'MC Captain Seleb | Mombasa Hype MC & DJ',
-                    text: 'Check out MC Captain Seleb official booking page & links:',
-                    url: window.location.href,
-                }).catch(() => {});
-            } else {
-                const dummy = document.createElement('input');
-                document.body.appendChild(dummy);
-                dummy.value = window.location.href;
-                dummy.select();
-                document.execCommand('copy');
-                document.body.removeChild(dummy);
-                showToast('Link copied to clipboard!');
-            }
-        }
-
-        function downloadVCard() {
-            const vcardData = 
-`BEGIN:VCARD
-VERSION:3.0
-FN:MC Captain Seleb
-ORG:MC Captain Seleb Entertainment
-TITLE:Mombasa Hype MC / DJ / Event Host
-TEL;TYPE=CELL,VOICE:+254707089335
-URL:https://instagram.com/captain_seleb
-NOTE:Mombasa Kenya Coastal Hype MC and Event Host
-END:VCARD`;
-
-            const blob = new Blob([vcardData], { type: 'text/vcard' });
-            const url = window.URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.style.display = 'none';
-            a.href = url;
-            a.download = 'MC_Captain_Seleb_Mombasa.vcf';
-            document.body.appendChild(a);
-            a.click();
-            window.URL.revokeObjectURL(url);
-            showToast('Contact saved to your phone!');
-        }
-
-        function showToast(message) {
-            const toast = document.getElementById('toast');
-            document.getElementById('toast-msg').textContent = message;
-            toast.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
-            toast.classList.add('opacity-100', 'translate-y-0');
-
-            setTimeout(() => {
-                toast.classList.remove('opacity-100', 'translate-y-0');
-                toast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
-            }, 3000);
-        }
-    </script>
-</body>
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MC Captain Seleb | Mombasa's #1 Hype MC &amp; DJ</title>
+  <meta name="description" content="MC Captain Seleb — Mombasa MC, DJ and event host. Book coastal club nights, beach parties, weddings and corporate events, and explore the photo gallery.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800;900&amp;family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+  <script>tailwind.config={theme:{extend:{colors:{selebCyan:'#00FFCC',selebTeal:'#00A896',selebGold:'#E6C280',selebBronze:'#C59B27',selebFire:'#FF3800',selebDark:'#060508'},fontFamily:{cinzel:['Cinzel','serif'],jakarta:['Plus Jakarta Sans','sans-serif']}}}}</script>
+  <style>
+html{scroll-behavior:smooth;scroll-padding-top:100px}*{box-sizing:border-box}body{font-family:'Plus Jakarta Sans',sans-serif;background:#060508;color:#fff;overflow-x:hidden;margin:0;-webkit-tap-highlight-color:transparent}.bg-flame-overlay{background:radial-gradient(ellipse at 50% 0,#ff380020,transparent 45%),radial-gradient(ellipse at 0 80%,#00ffcc12,transparent 50%),#060508}.gold-metallic-text{background:linear-gradient(135deg,#fff0ca,#e6c280 40%,#a3791b 80%,#fff0ca);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.seleb-card{background:rgba(15,14,23,.88);backdrop-filter:blur(16px);border:1px solid #00ffcc33;transition:transform .25s,border-color .25s}.seleb-card:hover{transform:translateY(-2px);border-color:#00ffcc88}.shine-effect{position:relative;overflow:hidden}.shine-effect:after{content:'';position:absolute;inset:-50%;background:linear-gradient(60deg,transparent,#ffffff12,transparent);transform:translateX(-100%) rotate(30deg);transition:transform .6s;pointer-events:none}.shine-effect:hover:after{transform:translateX(100%) rotate(30deg)}.site-header{position:sticky;top:0;z-index:40;width:100%;padding:16px 24px;background:#060508ec;backdrop-filter:blur(16px);border-bottom:1px solid #ffffff18}.header-inner{max-width:1012px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font-family:Cinzel,serif;font-weight:800;color:#e6c280;font-size:15px}.header-links{display:flex;align-items:center;gap:20px;font-size:12px}.header-links a:hover{color:#00ffcc}.header-tools{display:flex;gap:8px}.header-tools button{width:36px;height:36px;border-radius:10px;border:1px solid #ffffff20;background:#ffffff08;color:#ccc}.home-layout{width:100%;max-width:1060px;margin:0 auto;padding:56px 24px 32px;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}.home-layout>*{min-width:0}.site-hero{grid-column:1/-1;display:grid;grid-template-columns:1.12fr .88fr;align-items:center;gap:56px;padding:8px 0 34px}.hero-copy{display:flex;flex-direction:column;align-items:flex-start;gap:20px}.hero-emblem{width:84px;height:84px;position:relative}.hero-emblem .emblem-circle{height:84px;width:84px;border:2px solid #00ffcc;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#000;box-shadow:0 0 22px #00ffcc55}.hero-emblem svg{height:100%;width:100%}.hero-copy h1{font-size:clamp(38px,4.3vw,58px);line-height:1.12;letter-spacing:-.025em;margin:0 0 16px}.hero-title>p:first-of-type{font-size:12px;line-height:1.8;letter-spacing:.1em}.hero-title>p:last-of-type{margin-top:10px;font-size:12px;color:#b7b3c1}.hero-tags{display:flex;flex-wrap:wrap;gap:8px}.hero-tags span{padding:6px 10px;font-size:10px}.eyebrow{color:#00ffcc;font-size:10px;font-weight:800;letter-spacing:.2em;text-transform:uppercase}.availability{display:flex;align-items:center;gap:9px;color:#00ffcc;font-weight:700;font-size:11px}.availability:before{content:'';width:7px;height:7px;background:#00ffcc;border-radius:50%;box-shadow:0 0 12px #00ffcc70}.hero-description{font-size:14px;line-height:1.8;color:#b7b3c1;max-width:430px}.hero-ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:4px}.hero-ctas a{padding:13px 20px;border-radius:12px;font-size:12px;font-weight:800}.primary-cta{background:#e6c280;color:#060508}.secondary-cta{border:1px solid #00ffcc40;color:#00ffcc;background:#00ffcc08}.hero-portrait{position:relative;overflow:hidden;border-radius:20px;border:1px solid #00ffcc35;aspect-ratio:4/4.5;background:#0f0e17}.hero-portrait picture{display:block;height:100%}.hero-portrait img{width:100%;height:100%;object-fit:cover;object-position:50% 28%}.portrait-caption{position:absolute;bottom:0;left:0;right:0;padding:65px 22px 20px;background:linear-gradient(transparent,#000d);display:flex;justify-content:space-between;gap:12px;font-size:11px}.links-heading{grid-column:1/-1}.links-heading h2{font-family:Cinzel,serif;font-size:28px;margin-top:6px}.links-grid{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:26px}.links-grid>*{min-width:0}.links-grid>.grid{grid-column:1/-1}.links-grid>a,.links-grid>button{min-height:98px;padding:20px;gap:12px;border-radius:18px}.links-grid h4{font-size:14px}.links-grid p{font-size:11px;line-height:1.7;margin-top:3px}.links-grid>*>div{min-width:0}.residency,.gallery-feature{padding:28px;border-radius:20px}.residency{display:flex;flex-direction:column;justify-content:center;gap:16px}.residency h2,.gallery-feature h2{font-size:25px;line-height:1.3}.gallery-feature{display:flex;flex-direction:column;gap:16px}.gallery-cover{display:block;overflow:hidden;border-radius:12px;border:1px solid #ffffff15}.gallery-cover img{display:block;width:100%;aspect-ratio:1.85;object-fit:cover}.services{grid-column:1/-1;padding:26px;border-radius:20px}.services>.grid{grid-template-columns:repeat(4,1fr);gap:12px}.services>.grid>div{padding:16px}.home-footer{max-width:1060px;margin:0 auto;padding:26px 24px 40px;border-top:1px solid #ffffff15;text-align:center;position:relative;z-index:10}.home-footer p{color:#918b9e;font-size:11px}a:focus-visible,button:focus-visible{outline:3px solid #00ffcc;outline-offset:4px}.skip-link{position:fixed;top:-100px;left:16px;z-index:100;background:#060508;color:#00ffcc;padding:10px}.skip-link:focus{top:10px}#fire-canvas{opacity:.18}#booking-modal,#qr-modal{visibility:hidden}.modal-active{opacity:1!important;pointer-events:auto!important;transform:scale(1)!important;visibility:visible!important}
+@media(min-width:601px) and (max-width:900px){.site-hero{gap:28px}.hero-copy h1{font-size:40px}.links-grid>a,.links-grid>button{padding:16px}.services>.grid{grid-template-columns:1fr 1fr}}@media(max-width:600px){.site-header{padding:14px 18px}.brand{font-size:12px}.header-links{gap:14px}.header-tools button{width:30px;height:30px}.header-links>a[href="#connect"]{display:none}.home-layout{grid-template-columns:1fr;padding:32px 18px 24px;gap:22px}.site-hero{grid-template-columns:1fr;gap:26px;padding-bottom:10px}.hero-copy{gap:18px}.hero-copy h1{font-size:40px}.hero-portrait{aspect-ratio:1.4}.hero-portrait img{object-position:50% 23%}.hero-emblem,.hero-emblem .emblem-circle{width:70px;height:70px}.links-grid{grid-template-columns:1fr;gap:12px;margin-bottom:10px}.links-grid>a,.links-grid>button{padding:16px;min-height:90px}.residency,.gallery-feature,.services{padding:22px}.services>.grid{grid-template-columns:1fr 1fr;gap:8px}.services>.grid>div{padding:12px}.links-heading h2{font-size:26px}.hero-description{font-size:13px}.residency h2,.gallery-feature h2{font-size:22px}}@media(max-width:359px){.brand{font-size:11px}.hero-copy h1{font-size:34px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}#fire-canvas{display:none}}
+</style>
+ </head>
+ <body class="bg-flame-overlay min-h-screen relative">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas id="fire-canvas" class="fixed top-0 left-0 w-full h-full pointer-events-none z-0"></canvas>
+  <header class="site-header">
+   <div class="header-inner">
+    <a class="brand" href="index.html">MC CAPTAIN SELEB</a>
+    <nav aria-label="Main navigation" class="header-links">
+     <a href="gallery.html">Gallery</a><a href="#music">Music</a><a href="#connect">Connect</a>
+     <div class="header-tools">
+      <button aria-label="Show page QR code" onclick="toggleQRModal()"><i class="fa-solid fa-qrcode"></i></button>
+      <button aria-label="Share page" onclick="shareProfile()"><i class="fa-solid fa-share-nodes"></i></button>
+     </div>
+    </nav>
+   </div>
+  </header>
+  <main class="home-layout" id="main">
+   <section class="site-hero">
+    <div class="hero-copy">
+     <div class="hero-emblem">
+      <div class="emblem-circle">
+       <svg viewBox="0 0 200 200" aria-label="Captain Seleb emblem" role="img">
+        <defs>
+         <linearGradient id="cg">
+          <stop stop-color="#00ffcc" /><stop offset="1" stop-color="#008080" />
+         </linearGradient>
+         <linearGradient id="gg">
+          <stop stop-color="#fff0ca" /><stop offset=".5" stop-color="#e6c280" /><stop offset="1" stop-color="#8a6110" />
+         </linearGradient>
+        </defs>
+        <circle cx="100" cy="100" r="90" fill="none" stroke="url(#cg)" /><text x="100" y="115" text-anchor="middle" fill="url(#cg)" font-size="78" font-family="Cinzel" font-weight="900">MC</text><path d="M75 48 L85 58 L100 40 L115 58 L125 48 L120 68 L80 68 Z" fill="url(#gg)" /><circle cx="100" cy="100" r="30" fill="none" stroke="url(#gg)" stroke-width="5" /><path d="M100 62 V138 M62 100 H138 M73 73 L127 127 M127 73 L73 127" stroke="url(#gg)" stroke-width="3" /><text x="100" y="164" text-anchor="middle" fill="url(#gg)" font-size="13" font-family="Cinzel">CAPTAIN SELEB</text>
+       </svg>
+      </div>
+      <span class="absolute -bottom-1 -right-1 bg-black rounded-full p-1 border border-selebCyan">🇰🇪</span>
+     </div>
+     <p class="availability">Available for Coast &amp; EA gigs</p>
+     <div class="hero-title">
+      <h1 class="font-extrabold font-cinzel gold-metallic-text">MC CAPTAIN SELEB</h1>
+      <p class="text-selebCyan font-bold uppercase">Mombasa's #1 Hype MC <span class="text-selebFire">•</span> DJ <span class="text-selebFire">•</span> Event Host</p>
+      <p><i class="fa-solid fa-location-dot text-selebFire mr-1"></i> Mombasa, Coastal Region &amp; East Africa</p>
+     </div>
+     <p class="hero-description">From the first beat to the last encore. Bringing the energy to club nights, beach parties and unforgettable celebrations across the Coast.</p>
+     <div class="hero-tags">
+      <span class="rounded-full bg-cyan-500/10 text-cyan-300 border border-cyan-500/30">Coastal Vibez</span><span class="rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/30">Bongo &amp; Afrobeats</span><span class="rounded-full bg-red-500/10 text-red-400 border border-red-500/30">Beach Parties</span><span class="rounded-full bg-purple-500/10 text-purple-300 border border-purple-500/30">Weddings &amp; Galas</span>
+     </div>
+     <div class="hero-ctas">
+      <a class="primary-cta" href="https://wa.me/254707089335?text=Hello%20MC%20Captain%20Seleb!%20I%20want%20to%20inquire%20about%20booking%20you%20for%20an%20event." target="_blank" rel="noopener">Book the Captain ↗</a><a class="secondary-cta" href="gallery.html">Explore the gallery ↗</a>
+     </div>
+    </div>
+    <a class="hero-portrait" href="gallery.html" aria-label="Explore Captain Seleb's photo gallery"><picture><source srcset="assets/1000049718.webp" type="image/webp"><img src="assets/1000049718.jpg" width="1536" height="996" fetchpriority="high" alt="MC Captain Seleb wearing his signature crown"></picture><span class="portrait-caption"><span>MOMBASA · KENYA</span><span>View gallery ↗</span></span></a>
+   </section>
+   <!-- Insert this section inside <main>, before the services section. -->
+   <section class="music-releases" id="music" aria-labelledby="music-title">
+    <div class="music-heading">
+     <p class="eyebrow">Official releases · Listen now</p>
+     <h2 id="music-title">The Captain's Music</h2>
+     <p>Two sounds from Mombasa. Press play and feel the Coast.</p>
+    </div>
+    <div class="music-grid">
+     <article class="music-track">
+      <div class="music-art music-art-slow">
+       <i class="fa-solid fa-water" aria-hidden="true"></i><span>01 / COASTAL MELODY</span>
+      </div>
+      <div class="music-info">
+       <span class="music-genre">Melodic · Swahili</span>
+       <h3>CHAMBO</h3>
+       <p>A playful song using fishing as a metaphor for love and relationships.</p>
+       <audio controls preload="metadata" src="assets/chambo.mp3" aria-label="Play CHAMBO by MC Captain Seleb">Your browser does not support audio playback.</audio>
+       <small>6:05 · MC Captain Seleb</small>
+      </div>
+     </article>
+     <article class="music-track">
+      <div class="music-art music-art-hiphop">
+       <i class="fa-solid fa-city" aria-hidden="true"></i><span>02 / MOMBASA HIP-HOP</span>
+      </div>
+      <div class="music-info">
+       <span class="music-genre">Hip-Hop · Mombasa</span>
+       <h3>NEXT LEVEL</h3>
+       <p>A hip-hop tribute to Mombasa town and its energy.</p>
+       <audio controls preload="metadata" src="assets/next-level.mp3" aria-label="Play Next Level by MC Captain Seleb">Your browser does not support audio playback.</audio>
+       <small>2:34 · MC Captain Seleb</small>
+      </div>
+     </article>
+    </div>
+   </section>
+   <style>
+.music-releases{grid-column:1/-1;padding:12px 0 26px}.music-heading{margin-bottom:20px}.music-heading h2{font-family:Cinzel,serif;font-size:clamp(25px,3.5vw,34px);color:#e6c280;margin:6px 0}.music-heading>p:last-child{color:#b7b3c1;font-size:13px}.music-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.music-track{min-width:0;overflow:hidden;border-radius:20px;border:1px solid #00ffcc35;background:#0f0e17;box-shadow:0 10px 30px #0006}.music-art{height:145px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}.music-art i{font-size:66px;opacity:.75;filter:drop-shadow(0 0 24px #00ffcc77)}.music-art span{position:absolute;left:18px;bottom:14px;font-size:10px;font-weight:800;letter-spacing:.15em}.music-art-slow{background:radial-gradient(circle at 70% 25%,#00ffcc55,transparent 55%),linear-gradient(130deg,#063a3a,#080b1a)}.music-art-slow i{color:#00ffcc}.music-art-hiphop{background:radial-gradient(circle at 30% 20%,#ff380077,transparent 55%),linear-gradient(130deg,#321006,#0d0b16)}.music-art-hiphop i{color:#e6c280}.music-info{padding:20px}.music-genre{font-size:10px;color:#00ffcc;letter-spacing:.14em;text-transform:uppercase;font-weight:800}.music-info h3{font-family:Cinzel,serif;font-size:23px;font-weight:800;color:#fff;margin:6px 0}.music-info p{color:#b7b3c1;font-size:12px;line-height:1.7;min-height:42px}.music-info audio{display:block;width:100%;height:45px;margin:18px 0 9px;accent-color:#00a896}.music-info small{font-size:10px;color:#a9a3b5}@media(max-width:600px){.music-grid{grid-template-columns:1fr}.music-art{height:125px}.music-info p{min-height:0}}
+</style>
+   <script>
+// Pause the other track when a new track starts.
+document.querySelectorAll('.music-releases audio').forEach(player=>player.addEventListener('play',()=>document.querySelectorAll('.music-releases audio').forEach(other=>{if(other!==player)other.pause()})));
+</script>
+   <div class="links-heading">
+    <p class="eyebrow">Stay in the loop</p>
+    <h2 id="connect-title">Connect with the Captain</h2>
+   </div>
+   <section aria-labelledby="connect-title" class="links-grid" id="connect">
+    <a class="seleb-card shine-effect w-full rounded-2xl flex items-center justify-between group border-l-4 border-l-emerald-400" href="https://wa.me/254707089335?text=Hello%20MC%20Captain%20Seleb!%20I%20want%20to%20inquire%20about%20booking%20you%20for%20an%20event." target="_blank" rel="noopener">
+     <div class="flex items-center gap-3">
+      <div class="w-12 h-12 rounded-xl bg-white/10 text-emerald-300 flex items-center justify-center text-xl shrink-0">
+       <i class="fa-brands fa-whatsapp"></i>
+      </div>
+      <div>
+       <h4 class="font-bold text-white">Chat on WhatsApp</h4>
+       <p class="text-gray-400">+254 707 089335 • Direct Instant Message</p>
+      </div>
+     </div>
+     <i class="fa-solid fa-arrow-up-right-from-square text-gray-400 text-xs"></i>
+    </a>
+    <button class="seleb-card shine-effect w-full rounded-2xl flex items-center justify-between group border-l-4 border-l-amber-400 text-left" onclick="openBookingOptions()">
+     <div class="flex items-center gap-3">
+      <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-300 flex items-center justify-center text-xl shrink-0">
+       <i class="fa-solid fa-file-invoice-dollar"></i>
+      </div>
+      <div>
+       <h4 class="font-bold">Request Rate Card &amp; Booking</h4>
+       <p class="text-gray-400">Club Gigs, Beach Parties, Weddings &amp; Corporate</p>
+      </div>
+     </div>
+     <span class="text-amber-300 text-xs">Rates ›</span>
+    </button>
+    <a class="seleb-card shine-effect w-full rounded-2xl flex items-center justify-between group border-l-4 border-l-pink-400" href="https://instagram.com/captain_seleb" target="_blank" rel="noopener">
+     <div class="flex items-center gap-3">
+      <div class="w-12 h-12 rounded-xl bg-white/10 text-pink-300 flex items-center justify-center text-xl shrink-0">
+       <i class="fa-brands fa-instagram"></i>
+      </div>
+      <div>
+       <h4 class="font-bold text-white">Instagram Profile</h4>
+       <p class="text-gray-400">@captain_seleb • Recaps, Photos &amp; Stories</p>
+      </div>
+     </div>
+     <i class="fa-solid fa-arrow-up-right-from-square text-gray-400 text-xs"></i>
+    </a><a class="seleb-card shine-effect w-full rounded-2xl flex items-center justify-between group border-l-4 border-l-white-400" href="https://www.tiktok.com/@selebjeff" target="_blank" rel="noopener">
+     <div class="flex items-center gap-3">
+      <div class="w-12 h-12 rounded-xl bg-white/10 text-white-300 flex items-center justify-center text-xl shrink-0">
+       <i class="fa-brands fa-tiktok"></i>
+      </div>
+      <div>
+       <h4 class="font-bold text-white">TikTok Profile</h4>
+       <p class="text-gray-400">@selebjeff • Short clips &amp; performance moments</p>
+      </div>
+     </div>
+     <i class="fa-solid fa-arrow-up-right-from-square text-gray-400 text-xs"></i>
+    </a><a class="seleb-card shine-effect w-full rounded-2xl flex items-center justify-between group border-l-4 border-l-amber-400" href="https://audiomack.com/captainseleb" target="_blank" rel="noopener">
+     <div class="flex items-center gap-3">
+      <div class="w-12 h-12 rounded-xl bg-white/10 text-amber-300 flex items-center justify-center text-xl shrink-0">
+       <i class="fa-solid fa-wave-square"></i>
+      </div>
+      <div>
+       <h4 class="font-bold text-white">Listen on Audiomack</h4>
+       <p class="text-gray-400">@captainseleb • Music &amp; audio releases</p>
+      </div>
+     </div>
+     <i class="fa-solid fa-arrow-up-right-from-square text-gray-400 text-xs"></i>
+    </a><a class="seleb-card shine-effect w-full rounded-2xl flex items-center justify-between group border-l-4 border-l-blue-400" href="https://www.facebook.com/search/top?q=Seleb%20Captain%20Geoffrey" target="_blank" rel="noopener">
+     <div class="flex items-center gap-3">
+      <div class="w-12 h-12 rounded-xl bg-white/10 text-blue-300 flex items-center justify-center text-xl shrink-0">
+       <i class="fa-brands fa-facebook"></i>
+      </div>
+      <div>
+       <h4 class="font-bold text-white">Facebook Page</h4>
+       <p class="text-gray-400">Seleb Captain Geoffrey (King Captain Seleb) • 4.7K followers</p>
+      </div>
+     </div>
+     <i class="fa-solid fa-arrow-up-right-from-square text-gray-400 text-xs"></i>
+    </a><a class="seleb-card shine-effect w-full rounded-2xl flex items-center justify-between group border-l-4 border-l-red-400" href="https://youtube.com/@captainseleb" target="_blank" rel="noopener">
+     <div class="flex items-center gap-3">
+      <div class="w-12 h-12 rounded-xl bg-white/10 text-red-300 flex items-center justify-center text-xl shrink-0">
+       <i class="fa-brands fa-youtube"></i>
+      </div>
+      <div>
+       <h4 class="font-bold text-white">YouTube Channel</h4>
+       <p class="text-gray-400">@captainseleb • Live Shows &amp; Performance Videos</p>
+      </div>
+     </div>
+     <i class="fa-solid fa-arrow-up-right-from-square text-gray-400 text-xs"></i>
+    </a><a class="seleb-card shine-effect w-full rounded-2xl flex items-center justify-between group border-l-4 border-l-cyan-400" href="https://audiomack.com/captainseleb" target="_blank" rel="noopener">
+     <div class="flex items-center gap-3">
+      <div class="w-12 h-12 rounded-xl bg-white/10 text-cyan-300 flex items-center justify-center text-xl shrink-0">
+       <i class="fa-solid fa-compact-disc"></i>
+      </div>
+      <div>
+       <h4 class="font-bold text-white">Mixtapes &amp; Live Sets</h4>
+       <p class="text-gray-400">Listen to Afrobeats, Bongo, Amapiano &amp; Gengetone</p>
+      </div>
+     </div>
+     <i class="fa-solid fa-arrow-up-right-from-square text-gray-400 text-xs"></i>
+    </a>
+    <div class="grid grid-cols-2 gap-3 pt-1">
+     <a class="seleb-card p-3.5 rounded-2xl flex items-center justify-center gap-2 text-xs font-bold text-gray-200" href="tel:+254707089335"><i class="fa-solid fa-phone text-selebGold"></i>Call Hotline</a>
+     <button class="seleb-card p-3.5 rounded-2xl flex items-center justify-center gap-2 text-xs font-bold text-gray-200" onclick="downloadVCard()"><i class="fa-solid fa-address-book text-selebCyan"></i>Save Contact</button>
+    </div>
+   </section>
+   <section class="seleb-card residency border-amber-400/30">
+    <div class="flex items-center gap-2 text-amber-300">
+     <i class="fa-solid fa-microphone-lines text-xl"></i>
+     <p class="text-[10px] font-extrabold uppercase tracking-widest">Every Friday Night</p>
+    </div>
+    <h2 class="font-cinzel font-extrabold gold-metallic-text">Karaoke Night at Fisherman's Creek</h2>
+    <p class="text-sm text-gray-300">Join MC Captain Seleb for Karaoke Night at <strong class="text-white">Fisherman's Creek, Serena Side</strong>.</p>
+    <div class="flex flex-wrap gap-2 text-xs">
+     <span class="rounded-full bg-amber-400/10 border border-amber-400/25 px-3 py-1.5 text-amber-200"><i class="fa-regular fa-clock mr-1.5"></i>7:00 PM – Midnight</span><span class="rounded-full bg-cyan-400/10 border border-cyan-400/25 px-3 py-1.5 text-cyan-200"><i class="fa-solid fa-location-dot mr-1.5"></i>Serena Side, Mombasa</span>
+    </div>
+    <a class="self-start inline-flex items-center gap-2 rounded-xl bg-amber-400 text-black font-extrabold text-xs px-4 py-3" href="https://wa.me/254707089335?text=Hello%20MC%20Captain%20Seleb!%20Please%20send%20me%20details%20about%20Friday%20Karaoke%20Night%20at%20Fisherman%27s%20Creek." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Ask about Karaoke Night</a>
+   </section>
+   <section class="seleb-card gallery-feature border-selebCyan/25" id="gallery">
+    <div class="flex items-center justify-between gap-3">
+     <div>
+      <p class="eyebrow">The visual collection</p>
+      <h2 class="font-cinzel font-extrabold text-white">Captain Seleb Gallery</h2>
+     </div>
+     <i class="fa-regular fa-images text-3xl text-selebGold"></i>
+    </div>
+    <p class="text-sm text-gray-300">Live performances, signature style and coastal moments.</p>
+    <a class="gallery-cover" href="gallery.html" aria-label="View live performance photos"><picture><source srcset="assets/1000049714.webp" type="image/webp"><img src="assets/1000049714.jpg" width="1536" height="1002" loading="lazy" alt="Captain Seleb performing live under colourful lights"></picture></a><a class="seleb-card shine-effect rounded-xl p-4 flex items-center justify-between gap-3" href="gallery.html"><span class="flex items-center gap-3"><i class="fa-solid fa-photo-film text-selebCyan text-lg"></i><span><strong class="block text-sm">Open full gallery</strong><span class="text-xs text-gray-400">Five moments. One Captain.</span></span></span><i class="fa-solid fa-arrow-right text-selebCyan"></i></a>
+   </section>
+   <section class="seleb-card services">
+    <div class="flex items-center gap-2 border-b border-white/10 pb-2">
+     <i class="fa-solid fa-crown text-selebGold"></i>
+     <h3 class="text-xs font-extrabold uppercase tracking-wider font-cinzel">Mombasa &amp; Coast Event Hosting</h3>
+    </div>
+    <div class="grid grid-cols-2 gap-2.5 text-xs mt-3">
+     <div class="bg-black/40 p-2.5 rounded-xl border border-white/5 flex items-center gap-2">
+      <i class="fa-solid fa-martini-glass-citrus text-pink-400"></i><span class="text-gray-300 font-medium">Clubs &amp; Lounges</span>
+     </div>
+     <div class="bg-black/40 p-2.5 rounded-xl border border-white/5 flex items-center gap-2">
+      <i class="fa-solid fa-umbrella-beach text-cyan-400"></i><span class="text-gray-300 font-medium">Beach Parties</span>
+     </div>
+     <div class="bg-black/40 p-2.5 rounded-xl border border-white/5 flex items-center gap-2">
+      <i class="fa-solid fa-ring text-amber-300"></i><span class="text-gray-300 font-medium">Weddings &amp; Galas</span>
+     </div>
+     <div class="bg-black/40 p-2.5 rounded-xl border border-white/5 flex items-center gap-2">
+      <i class="fa-solid fa-icons text-red-400"></i><span class="text-gray-300 font-medium">Concerts &amp; Shows</span>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="home-footer">
+   <p><a class="text-selebCyan" href="gallery.html">View Gallery</a> • © <span id="year">2026</span> MC Captain Seleb • Mombasa, Kenya. All Rights Reserved.</p>
+  </footer>
+  <div id="booking-modal" role="dialog" aria-modal="true" aria-label="Rate inquiry and booking" aria-hidden="true" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md opacity-0 pointer-events-none transition-all duration-300 scale-95">
+   <div class="seleb-card w-full max-w-md rounded-3xl p-6 border border-selebCyan/40 relative space-y-4">
+    <button class="absolute top-4 right-4 text-gray-300" onclick="closeBookingOptions()" aria-label="Close booking options"><i class="fa-solid fa-xmark"></i></button>
+    <div class="text-center space-y-1">
+     <i class="fa-brands fa-whatsapp text-emerald-400 text-3xl"></i>
+     <h3 class="text-lg font-bold font-cinzel">Rate Inquiry &amp; Booking</h3>
+     <p class="text-xs text-gray-400">Select event type to receive custom rate card via WhatsApp:</p>
+    </div>
+    <div class="space-y-2">
+     <button class="w-full p-3 rounded-xl bg-black/50 hover:bg-emerald-500/20 border border-white/10 text-left text-xs font-semibold flex justify-between items-center" onclick="sendWhatsAppTemplate('Mombasa Nightclub / Lounge Gig')"><span>🔥 Nightclub / Lounge Hype Host</span><i class="fa-solid fa-chevron-right text-emerald-400"></i></button>
+     <button class="w-full p-3 rounded-xl bg-black/50 hover:bg-emerald-500/20 border border-white/10 text-left text-xs font-semibold flex justify-between items-center" onclick="sendWhatsAppTemplate('Mombasa Beach Party / Resort Event')"><span>🏖️ Beach Party / Resort Event</span><i class="fa-solid fa-chevron-right text-emerald-400"></i></button>
+     <button class="w-full p-3 rounded-xl bg-black/50 hover:bg-emerald-500/20 border border-white/10 text-left text-xs font-semibold flex justify-between items-center" onclick="sendWhatsAppTemplate('Coastal Wedding Reception')"><span>💍 Wedding Reception / Private Gala</span><i class="fa-solid fa-chevron-right text-emerald-400"></i></button>
+     <button class="w-full p-3 rounded-xl bg-black/50 hover:bg-emerald-500/20 border border-white/10 text-left text-xs font-semibold flex justify-between items-center" onclick="sendWhatsAppTemplate('Corporate Function in Coast Region')"><span>👔 Corporate Event / Brand Launch</span><i class="fa-solid fa-chevron-right text-emerald-400"></i></button>
+    </div>
+   </div>
+  </div>
+  <div id="qr-modal" role="dialog" aria-modal="true" aria-label="Page QR code" aria-hidden="true" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md opacity-0 pointer-events-none transition-all duration-300 scale-95">
+   <div class="seleb-card w-full max-w-xs rounded-3xl p-6 border border-selebGold/40 relative text-center space-y-4">
+    <button class="absolute top-4 right-4" onclick="toggleQRModal()" aria-label="Close QR code"><i class="fa-solid fa-xmark"></i></button>
+    <h3 class="text-base font-bold font-cinzel">Scan Page QR Code</h3>
+    <div class="bg-white p-3 rounded-2xl inline-block">
+     <img id="qr-img" class="w-40 h-40" alt="QR Code" src="https://api.qrserver.com/v1/create-qr-code/?size=180x180">
+    </div>
+    <p class="text-[11px] text-gray-400">Scan to share MC Captain Seleb's booking page instantly</p>
+   </div>
+  </div>
+  <div id="toast" class="fixed bottom-5 left-1/2 -translate-x-1/2 z-50 seleb-card px-4 py-2.5 rounded-full flex items-center gap-2 text-xs opacity-0 pointer-events-none transition-all duration-300 translate-y-4">
+   <i class="fa-solid fa-circle-check text-selebCyan"></i><span id="toast-msg">Action successful</span>
+  </div>
+  <script>
+document.getElementById('year').textContent=new Date().getFullYear();document.getElementById('qr-img').src='https://api.qrserver.com/v1/create-qr-code/?size=180x180&data='+encodeURIComponent(location.href)+'&color=000000';
+const canvas=document.getElementById('fire-canvas'),ctx=canvas.getContext('2d');let particles=[];function resizeCanvas(){canvas.width=innerWidth;canvas.height=innerHeight}addEventListener('resize',resizeCanvas);resizeCanvas();class Particle{constructor(){this.reset()}reset(){this.x=Math.random()*canvas.width;this.y=canvas.height+Math.random()*50;this.size=Math.random()*2.5+1;this.speedY=Math.random()*1.5+.5;this.speedX=(Math.random()-.5)*.5;this.colors=['#00ffcc','#ff3800','#e6c280','#00a896'];this.color=this.colors[Math.floor(Math.random()*4)];this.alpha=Math.random()*.6+.2}update(){this.y-=this.speedY;this.x+=this.speedX;this.alpha-=.003;if(this.y<0||this.alpha<=0)this.reset()}draw(){ctx.beginPath();ctx.arc(this.x,this.y,this.size,0,Math.PI*2);ctx.fillStyle=this.color;ctx.globalAlpha=this.alpha;ctx.shadowBlur=8;ctx.shadowColor=this.color;ctx.fill();ctx.globalAlpha=1}}for(let i=0;i<35;i++)particles.push(new Particle());function animate(){ctx.clearRect(0,0,canvas.width,canvas.height);particles.forEach(p=>{p.update();p.draw()});requestAnimationFrame(animate)}if(!matchMedia('(prefers-reduced-motion:reduce)').matches)animate();
+function openBookingOptions(){let e=document.getElementById('booking-modal');e.classList.add('modal-active');e.setAttribute('aria-hidden','false')}function closeBookingOptions(){let e=document.getElementById('booking-modal');e.classList.remove('modal-active');e.setAttribute('aria-hidden','true')}function toggleQRModal(){let e=document.getElementById('qr-modal');e.classList.toggle('modal-active');e.setAttribute('aria-hidden',String(!e.classList.contains('modal-active')))}document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeBookingOptions();let qr=document.getElementById('qr-modal');qr.classList.remove('modal-active');qr.setAttribute('aria-hidden','true')}});function sendWhatsAppTemplate(type){closeBookingOptions();window.open('https://wa.me/254707089335?text='+encodeURIComponent('Hello MC Captain Seleb! I am reaching out to request your Rate Card for a '+type+'. Please share availability and rates.'),'_blank')}function shareProfile(){if(navigator.share){navigator.share({title:'MC Captain Seleb | Mombasa Hype MC & DJ',text:'Check out MC Captain Seleb official booking page & links:',url:location.href}).catch(()=>{})}else if(navigator.clipboard){navigator.clipboard.writeText(location.href).then(()=>showToast('Link copied to clipboard!')).catch(()=>{})}}function downloadVCard(){let data='BEGIN:VCARD\nVERSION:3.0\nFN:MC Captain Seleb\nORG:MC Captain Seleb Entertainment\nTITLE:Mombasa Hype MC / DJ / Event Host\nTEL;TYPE=CELL,VOICE:+254707089335\nURL:https://instagram.com/captain_seleb\nNOTE:Mombasa Kenya Coastal Hype MC and Event Host\nEND:VCARD';let u=URL.createObjectURL(new Blob([data],{type:'text/vcard'}));let a=document.createElement('a');a.href=u;a.download='MC_Captain_Seleb_Mombasa.vcf';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),1000);showToast('Contact file downloaded!')}let toastTimeout;function showToast(message){let t=document.getElementById('toast');document.getElementById('toast-msg').textContent=message;t.classList.remove('opacity-0','pointer-events-none','translate-y-4');t.classList.add('opacity-100','translate-y-0');clearTimeout(toastTimeout);toastTimeout=setTimeout(()=>{t.classList.remove('opacity-100','translate-y-0');t.classList.add('opacity-0','pointer-events-none','translate-y-4')},3000)}
+</script>
+ </body>
 </html>
